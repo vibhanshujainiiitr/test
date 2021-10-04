@@ -9,7 +9,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165669163-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-165669163-2');
@@ -79,6 +82,7 @@
           <li><a href="#about" class="smoothScroll">About</a></li>
           <li><a href="#journal" class="smoothScroll">Project</a></li>
           <li><a href="#contact" class="smoothScroll">Contact</a></li>
+
         </ul>
 
       </div>
@@ -128,8 +132,17 @@
               <p class="p-heading">I am a student of Bachelor of Technology in Computer Science and Engineering in
                 Indian Institute of Information Technology Raichur, which is under the Indian Institute of Technology
                 Hyderabad.</p>
-              <p class="separator">My home town is Ajmer, Rajasthan, and belongs to a lower-middle-class family. I learn
-                a lot of things from my past, which motivates me to work hard to make a better future.</p>
+              <p class="separator" style="font-size: 14px;">
+                Passionate for Tech and Science.
+                I have helped a couple of startups with building websites and SEO, digital marketing solutions. The key
+                concepts which I always keep in the mind are having an amazing user experience, attractive colors and
+                animations, awesome user interactiveness, mobile and tablet responsiveness, light speed loading, and a
+                good rating on search engines.
+              </p>
+              <button onclick="download_resume()"
+                style="color:#b8a07e; background-color: transparent; border-radius: 0.6em; padding: 5px; border:3px solid #b8a07e;">
+                Resume
+              </button>
 
             </div>
 
@@ -596,6 +609,10 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    function download_resume() {
+      location.href = "./assets/img/portfolio/vibhanshu_resume.pdf";
+    }
   </script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
